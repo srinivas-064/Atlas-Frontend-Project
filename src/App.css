@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+header {
+    height: 80px;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo button { 
+    background-color: #202020;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.nav-web{
+    display: flex;
+    list-style: none;
+}
+.nav-web li a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: hsl(0, 26%, 85%);   
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.hero-container{
+    width: 80%;
+    height: 400px;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.hero-image img{
+   height: 100%;
+   width: 100%; 
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.hero-content h1{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+}
+.hero-container p{
+    margin-bottom: 60px;
+    font-size: 1.1rem;
+}
+.hero-container button{
+    height: 40px;
+    width: 170px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.1); /* Similar shadow as container */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.card {
+    background: radial-gradient(circle at center, #2b2b2b, #121212);
+    color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    backdrop-filter: blur(10px); /* Glass-like effect */
+  }
+  
+  .card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6); /* Soft text glow */
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .card p strong {
+    color: rgba(200, 200, 200, 0.8); /* Softer light gray */
+  }
+  .About-section{
+    margin: 50px 0px 50px 0px;
+    padding-left: 8%;
+  }
+  .about-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto; /* Centering the container */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border style */
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between input fields */
+    align-items: center;
+}
+
+.input-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover and focus */
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1); /* Inner shadow */
+}
+
+.input-container:focus {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Slightly highlighted border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glowing effect */
+}
+
+textarea.input-container {
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.1); /* Similar shadow as container */
+}
+
+    /* loader */
+.loader-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #25b09b;
+    --_m: 
+        conic-gradient(#0000 10%,#000),
+        linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+
+.card-section{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    list-style: none;
+}
+.image-card{
+    background: radial-gradient(circle at center, #2b2b2b, #121212);
+    color: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    backdrop-filter: blur(10px); /* Glass-like effect */
+}
+.country-image{
+    height: 100px;
+}
+
+.control-section{
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+select{
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover and focus */
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1); /* Inner shadow */
+    cursor: pointer;
+}
